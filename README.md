@@ -142,3 +142,4 @@ Additional notes
 
 * Section and section references can be escaped with a double `@` sign
 * Section text will append at the end using `+=` but with the operator `-=`, it can also be appended at the beginning
+* The destination folder can be configured using the `g:tangle_dir` variable
