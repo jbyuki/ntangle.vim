@@ -81,7 +81,7 @@ The plain **sections** are defined using the following syntax:
 some text
 ```
 
-Notice it's same as **root sectoins** except the `+=` signs at the end. These sections will not be output as a file. These are referenced in other sections and eventually in root sections.
+Notice it's same as **root sections** except the `+=` signs at the end. These sections will not be output as a file. These are referenced in other sections and eventually in root sections.
 
 Sections can be referenced with the following syntax:
 
