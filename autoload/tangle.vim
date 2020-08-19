@@ -71,6 +71,7 @@ function! tangle#TangleCurrentBuffer(outputdir)
 		
 		if line =~ '^\s*@@'
 			if len(sections) == 0
+				continue
 			endif
 			
 			let ml = matchlist(line, '\(.*\)@@\(.*\)')
@@ -120,6 +121,7 @@ function! tangle#TangleCurrentBuffer(outputdir)
 			let ml = matchlist(line, '\(\s*\)@\(\S\+\)')
 			
 			if len(sections) == 0
+				continue
 			endif
 			
 			let l = { 'type' : s:REFERENCE, 'str' : ml[2], 'prefix' : ml[1] }
@@ -131,6 +133,7 @@ function! tangle#TangleCurrentBuffer(outputdir)
 		
 		else
 			if len(sections) == 0
+				continue
 			endif
 			
 			let l = { 'type' : s:TEXT, 'str' : line }
@@ -207,6 +210,7 @@ function! tangle#GoToLine(args)
 		
 		if line =~ '^\s*@@'
 			if len(sections) == 0
+				continue
 			endif
 			
 			let ml = matchlist(line, '\(.*\)@@\(.*\)')
@@ -256,6 +260,7 @@ function! tangle#GoToLine(args)
 			let ml = matchlist(line, '\(\s*\)@\(\S\+\)')
 			
 			if len(sections) == 0
+				continue
 			endif
 			
 			let l = { 'type' : s:REFERENCE, 'str' : ml[2], 'prefix' : ml[1] }
@@ -267,6 +272,7 @@ function! tangle#GoToLine(args)
 		
 		else
 			if len(sections) == 0
+				continue
 			endif
 			
 			let l = { 'type' : s:TEXT, 'str' : line }
