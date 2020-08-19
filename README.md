@@ -34,20 +34,20 @@ set ft
 and it should return
 
 ```
-	ft=tangle
+ft=tangle
 ```
 
 Type a ntangle literal program such as:
 
 ```
-	@test.txt=
-	Hello ntangle
+@test.txt=
+Hello ntangle
 ```
 
 After saving the file, it should automatically create an ntangle folder besides the \*.tl which contains test.txt with the following content:
 
 ```
-	Hello ntangle
+Hello ntangle
 ```
 
 Syntax
