@@ -137,6 +137,24 @@ Once the cache has been generated the ctrlp fuzzy search can be invoked using:
 
 It's a good idea to bind this to a shortcut key with nnoremap for more convinence.
 
+Line jumping
+------------
+
+If you encounter some compilation errors during your development process the compiler might say the error is on **line 34** for example.
+
+To jump to the line directly viewing the tangle file is done using:
+
+```
+:TangleGoto 34
+```
+
+If the tangle file generates multiple files, the filename also needs to specified:
+
+```
+:TangleGoto file.cpp:34
+```
+
+
 Additional notes
 ----------------
 
