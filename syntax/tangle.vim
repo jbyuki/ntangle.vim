@@ -1,7 +1,7 @@
 let ext = expand("%:t:r:e")
 
 if ext != ""
-	call execute("runtime! syntax/" . ext . ".vim")
+	call execute("set syntax=" . ext)
 endif
 
 syn cluster vimFuncBodyList	add=ntangleSection,ntangleSectionReference
