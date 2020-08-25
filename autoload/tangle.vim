@@ -156,17 +156,17 @@ function! tangle#TangleCurrentBuffer(outputdir)
 		if filename == "*"
 			let filename = expand("%:t:r")
 		endif
-		let fullpath = parentdir . "\\" . a:outputdir . "\\" . filename
+		let fullpath = parentdir . "/" . a:outputdir . "/" . filename
 		if filename =~ '/'
 			let dirs = split(filename, '/')
 			
-			let curdir = parentdir . "\\" . a:outputdir . "\\"
+			let curdir = parentdir . "/" . a:outputdir . "/"
 			for i in range(0, len(dirs)-2)
 				let curdir = curdir . dirs[i]
 				if !isdirectory(curdir)
 					call mkdir(curdir)
 				endif
-				let curdir = curdir . "\\"
+				let curdir = curdir . "/"
 			endfor
 			
 			let fullpath = curdir . dirs[-1]
