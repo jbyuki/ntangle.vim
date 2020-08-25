@@ -154,6 +154,11 @@ If the tangle file generates multiple files, the filename also needs to specifie
 :TangleGoto file.cpp:34
 ```
 
+Examples
+--------
+
+* [Game of life](https://gist.github.com/jbyuki/e2d0b9a93f79ed8acd4df330218830aa)
+* [This plugin](https://gist.github.com/jbyuki/c3c102037805a963a696358646d97cf8)
 
 Additional notes
 ----------------
