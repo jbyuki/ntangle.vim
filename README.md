@@ -168,3 +168,4 @@ Additional notes
 * The destination folder can be configured using the `g:tangle_dir` variable
 * Use the <kbd>\*</kbd> key to quickly navigate to sections
 * Use <kbd>Tab</kbd> to autocomplete long section names
+* Filetype detection for syntax highlighting is done through extension (e.g. hello.cpp.vim will put cpp highlighting)
