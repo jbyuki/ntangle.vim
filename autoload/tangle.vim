@@ -288,7 +288,7 @@ function! tangle#GoToLine(args)
 	let node = roots[0]
 	if a:args =~ ":"
 		let m = split(a:args, ":")
-		let node = m[0];
+		let node = m[0]
 		let linesearch = str2nr(m[1])
 	else
 		let linesearch = str2nr(a:args)
