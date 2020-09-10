@@ -5,6 +5,8 @@ let matching = uniq(sort(filter(split(execute('autocmd filetypedetect'), "\n"), 
 
 if len(matching) >= 1 && matching[0]  =~ 'setf'
    let lang = matchstr(matching[0], 'setf\s\+\zs\k\+')
+elseif len(matching) >= 1 && matching[0]  =~ 'filetype'	
+   let lang = matchstr(matching[0], 'filetype=\zs\k\+')
 endif
 
 call execute("set filetype=" . lang)
