@@ -1,6 +1,8 @@
 ntangle
 =======
 
+#### Also see [ntangle.nvim](https://github.com/jbyuki/ntangle.nvim) which is the "spirtual successor" to this plugin.
+
 Description
 -----------
 
